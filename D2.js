@@ -23,18 +23,17 @@ console.log("il più grande tra due numeri interi è:", result)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const 
+const number = (number3) => {
+  if (number3 !== 5) {
+    console.log("not equal")
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
+number (4)
+number (1)
+number (5)
+number (6)
+number (15)
 
 
 
