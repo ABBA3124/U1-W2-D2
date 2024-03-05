@@ -3,18 +3,15 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const ilPiùGrande = (number1, number2) => {
-  if (number1 > number2){
-    return number1
-  } if (number2 > number1) {
-    return number2
-  } 
-}
-
+let ilPiùGrande
 let number1 = 27
 let number2 = 15
-let result = ilPiùGrande (number1, number2)
-console.log("il più grande tra due numeri interi è:", result)
+if (number1 > number2) {
+  ilPiùGrande = number1
+} else if (number2 > number1) {
+  ilPiùGrande = number2
+}
+console.log("il più grande è:", ilPiùGrande)
 
 
 
@@ -24,17 +21,10 @@ console.log("il più grande tra due numeri interi è:", result)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const number = (number3) => {
-  if (number3 !== 5) {
+let number = 4
+if (number !== 5) {
     console.log("not equal")
-  }
 }
-
-number (4)
-number (1)
-number (5)
-number (6)
-number (15)
 
 
 
@@ -44,16 +34,11 @@ number (15)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const checkDivisibility = (number5) => {
-  if (number5 % 5 === 0) {
-    console.log("divisibile per 5")
-  }
-}
+let number5 = 50
+if (number5 % 5 === 0) {
+  console.log ("divisibile per 5!")
+} 
 
-checkDivisibility (10)
-checkDivisibility (16)
-checkDivisibility (20)
-checkDivisibility (41)
 
 
 
@@ -64,27 +49,11 @@ checkDivisibility (41)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 // il valore di uno dei due è ugale a 8 stampa "uno dei due è uguale a 8!"
-const checkNumero = (number6, number7) => {
-  if (number6 === 8 || number7 === 8) {
-    console.log("uno dei due è uguale a 8!") 
-  } // se la loro addizione/sottrazione sia uguale a 8
-  else if (number6 + number7 === 8 || number6 - number7 === 8 || number7 - number6 === 8) { 
-    console.log ("addizione/sottrazione dei due numeri è uguale a 8!")
-  } else {
-    console.log("Nessuna Compatibilità") // se i valori di number6 e number7 di uno dei due non è 8 e se la loro addizione/sottrazione non sia uguale a 8 conmparirà questo messaggio  
-  }
+let number6 = 10
+let number7 = 2
+if (number6 === 8 || number7 === 8 || number6 + number7 === 8 || number6 - number7 === 8 || number7 - number6 === 8) {
+  console.log ("uno dei due è 8 oppure addizione/sottrazione uguale a 8")
 }
-
-checkNumero (5, 8) // 
-checkNumero (10, 15)
-checkNumero (8, 8)
-checkNumero (87, 87)
-checkNumero (8, 57)
-checkNumero (5, 3)
-checkNumero (3, 5)
-checkNumero (4, 4)
-checkNumero (4, 10)
-checkNumero ()
 
 
 
