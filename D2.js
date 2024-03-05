@@ -66,12 +66,15 @@ if (number6 === 8 || number7 === 8 || number6 + number7 === 8 || number6 - numbe
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
-
-
-
-
+let totalShoppingCart = 120
+if (totalShoppingCart > 50){
+  console.log("Name-User ha diritto alla spedizione gratuita")
+  console.log("Total da addebbitare all'utente per il checkout", totalShoppingCart)
+} else {
+  let totaleCompresaSpedizione = totalShoppingCart + 10
+  console.log("Costo spedizione: 10")
+  console.log("Total da addebbitare all'utente per il checkout",totaleCompresaSpedizione)
+}
 
 
 
@@ -83,10 +86,9 @@ if (number6 === 8 || number7 === 8 || number6 + number7 === 8 || number6 - numbe
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
-
-
+const discount = totalShoppingCart *0.2
+totalShoppingCart -= discount
+console.log("totale da addebitare per il checkout", totalShoppingCart)
 
 
 
@@ -100,19 +102,31 @@ if (number6 === 8 || number7 === 8 || number6 + number7 === 8 || number6 - numbe
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let variant1 = 7
+let variant2 = 90
+let variant3 = 125
 
-
-
-
-
-
-
-
-
-
-
-
-
+if (variant1 >= variant2 && variant1 >= variant3){
+  if (variant2 > variant3){
+    console.log(variant1, variant2, variant3)
+  } else {
+    console.log(variant1, variant3, variant2)
+  }
+} 
+else if (variant2 >= variant1 && variant2 >= variant3) {
+  if (variant1 > variant3) {
+      console.log(variant2, variant1, variant3);
+  } else {
+      console.log(variant2, variant3, variant1);
+  }
+}
+else {
+  if (variant1 > variant2) {
+      console.log(variant3, variant1, variant2);
+  } else {
+      console.log(variant3, variant2, variant1);
+  }
+}
 
 
 
@@ -122,7 +136,12 @@ if (number6 === 8 || number7 === 8 || number6 + number7 === 8 || number6 - numbe
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let valore = "parola"
+if (typeof valore === 'number') {
+  console.log("valore è un numero")
+} else {
+  console.log("valore non è un numero")
+}
 
 
 
@@ -136,15 +155,12 @@ if (number6 === 8 || number7 === 8 || number6 + number7 === 8 || number6 - numbe
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
-
-
-
-
-
-
-
+let numero = 78
+if (numero % 2 === 0) {
+  console.log("il numero è pari")
+} else {
+  console.log("il numero non è pari")
+}
 
 
 
@@ -163,11 +179,14 @@ if (number6 === 8 || number7 === 8 || number6 + number7 === 8 || number6 - numbe
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
-
-
-
+let val = 7
+if (val < 5) {
+  console.log("meno di 5")
+} else if (val < 10) {
+  console.log("meno di 10")
+} else {
+  console.log("uguale a 10 o maggiore")
+}
 
 
 
@@ -185,10 +204,8 @@ const me = {
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
-
-
+me.city = "Toronto"
+console.log(me)
 
 
 
@@ -199,7 +216,8 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.lastName
+console.log(me)
 
 
 
@@ -211,7 +229,8 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.skills.pop()
+console.log(me)
 
 
 
@@ -225,12 +244,9 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
-
-
-
-
+let vuoto = []
+vuoto.push(1,2,3,4,5,6,7,8,9,10)
+console.log(vuoto)
 
 
 
@@ -242,3 +258,6 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+vuoto.pop()
+vuoto.push(100)
+console.log(vuoto)
